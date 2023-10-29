@@ -4,20 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="scrollify.js"></script>
     <title>HapticWave</title>
     <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="/images/logo.jpg" alt="logo" width="50px">
-        </div>
-        <div>
-
-        </div>
-
-
+    <header class="header js--header" data-section-name="header">
+        <h1 class="header__title">Header Content</h1>
+    </header>
+    
+    <nav class="section-navigate js--navigate">
+        <ul class="section-navigate__items js--navigate-items">
+            <li class="section-navigate__item">
+                <a href="#first" class="section-navigate__link js--navigate-link is--active">
+                    <span class="section-navigate__name">First</span>
+                </a>
+            </li>
+            <li class="section-navigate__item">
+                <a href="#second" class="section-navigate__link js--navigate-link">
+                    <span class="section-navigate__name">Second</span>
+                </a>
+            </li>
+            <li class="section-navigate__item">
+                <a href="#third" class="section-navigate__link js--navigate-link">
+                    <span class="section-navigate__name">Third</span>
+                </a>
+            </li>
+            <li class="section-navigate__item">
+                <a href="#fourth" class="section-navigate__link js--navigate-link">
+                    <span class="section-navigate__name">Fourth</span>
+                </a>
+            </li>
+            <li class="section-navigate__item">
+                <a href="#fifth" class="section-navigate__link js--navigate-link">
+                    <span class="section-navigate__name">Fifth</span>
+                </a>
+            </li>
+        </ul>
     </nav>
     
+    <section class="section__first is--scrolled js--scrollify" data-section-name="first">
+        <img src="http://lorempixel.com/1280/720/nature" alt="" />
+        <div class="section__first-content">
+            <h1 class="section__first-title animated js--first-title">Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
+        </div>
+    </section>
+    
+    <section class="section__second is--scrolled js--scrollify" data-section-name="second">
+        <div class="section__second-container">
+            <div class="section__second-card animated js--section-card">
+                <h4 class="section-card__title">Lorem ipsum dolor sit amet consectetur</h4>
+                <div class="section-card__img">
+                    <img src="http://www.lorempixel.com/250/120" alt="" />
+                </div>
+                <div class="section-card__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita fugiat numquam, neque recusandae, provident perspiciatis dolorem cum nulla molestias molestiae delectus, labore nihil quo deserunt maxime voluptatum unde cumque dolor.</p>
+                </div>
+            </div>
+            <div class="section__second-card animated js--section-card">
+                <h4 class="section-card__title">Lorem ipsum dolor sit amet consectetur</h4>
+                <div class="section-card__img">
+                    <img src="http://www.lorempixel.com/250/120" alt="" />
+                </div>
+                <div class="section-card__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nam perspiciatis ipsa, quidem eum eveniet quisquam excepturi, cumque rem placeat eos quos voluptatem quibusdam possimus doloremque voluptas, sequi similique magnam.</p>
+                </div>
+            </div>
+            <div class="section__second-card animated js--section-card">
+                <h4 class="section-card__title">Lorem ipsum dolor sit amet consectetur</h4>
+                <div class="section-card__img">
+                    <img src="http://www.lorempixel.com/250/120" alt="" />
+                </div>
+                <div class="section-card__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit amet perspiciatis aliquam, nihil voluptates eum sapiente fuga, quidem necessitatibus rerum natus inventore deleniti id sunt, numquam incidunt facere consequuntur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section__third is--scrolled js--scrollify js--third" data-section-name="third">
+        <h2 class="section__third-title animated js--third-title">Third</h2>
+        
+        <div class="section__third-container">
+            <div class="section__third-left animated js--third-left">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt exercitationem reiciendis eius consequuntur fugit quos nulla natus, aperiam tenetur dolor unde aliquam sequi consequatur culpa est nemo incidunt ipsa veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur adipisci autem porro eius natus totam necessitatibus consectetur maxime quae culpa? Amet sunt neque velit porro officia alias possimus est doloribus!
+            </div>
+            <div class="section__third-right animated js--third-right">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non maxime odit cum quod blanditiis facilis nobis repellat id nulla, debitis architecto ipsam, suscipit tempora et itaque ut totam eveniet necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus rerum eaque vel inventore ipsum, consequatur perferendis aliquam est dolor facilis illum impedit. Itaque, dignissimos recusandae tempora magnam explicabo distinctio iste.
+            </div>
+        </div>
+    </section>
+    
+    <section class="section__fourth is--scrolled js--scrollify" data-section-name="fourth">
+        <h2 class="section__fourth-title">Non-dynamic height section</h2>
+        <p class="section__fourth-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque illum totam saepe. Temporibus, dicta quod maiores dolorum harum numquam voluptates voluptatem placeat odit. Assumenda nemo omnis laboriosam sint eaque.</p>
+    </section>
+    
+    <section class="section__fifth is--scrolled js--scrollify" data-section-name="fifth">Fifth</section>
+    
+    <footer class="footer js--footer" data-section-name="footer">
+        <p class="footer__text">Footer Section</p>
+        <p class="footer__copyright">Copyright (c)</p>
+    </footer>
 </body>
 </html>
